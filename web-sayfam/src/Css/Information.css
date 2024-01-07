@@ -1,0 +1,20 @@
+.main-div {
+  display: flex;
+  width: 90%;
+  height: 20%;
+  margin-left: 4rem;
+}
+
+.photo-div {
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.info-title {
+  width: 60%;
+  margin-left: 4rem;
+  margin-top: 0.75rem;
+  font-size: 3.75rem;
+  line-height: 1;
+}
