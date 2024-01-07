@@ -5,7 +5,7 @@ export const HeaderData = {
 };
 
 export const trHeaderData = {
-  skills: "Yeteneklerssss",
+  skills: "Yetenekler",
   projects: "Projeler",
   hireMe: "İletişim",
 };
