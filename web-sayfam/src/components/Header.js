@@ -4,6 +4,7 @@ import "../Css/Header.css";
 import { enAction, trAction } from "../actions/langAction";
 import circle from "../assets/Ellipse 9.png";
 import { DarkModeContext } from "../context/DarkModeContect";
+import eclipse from "../assets/Ellipse 1.png";
 
 export default function Header() {
   // const projectsRef = useRef();
@@ -15,10 +16,7 @@ export default function Header() {
   const HeaderData = useSelector((state) => state.headerData);
 
   const { handleMode, mode } = useContext(DarkModeContext);
-
-  // const [mode, setMode] = useState(
-  //   localStorage.getItem("mode") === "light" ? "dark" : "light"
-  // );
+  
 
   const [language, setLanguage] = useState("Türkçe");
   const dispatch = useDispatch();
@@ -32,31 +30,8 @@ export default function Header() {
     }
   };
 
-  // useEffect(() => {
-  //   if (
-  //     localStorage.mode === "dark" ||
-  //     (!("mode" in localStorage) &&
-  //       window.matchMedia("(prefers-color-scheme: dark)").matches)
-  //   ) {
-  //     document.documentElement.classList.add("dark");
-  //   } else {
-  //     document.documentElement.classList.remove("dark");
-  //   }
-  // }, []);
-
-  // const handleMode = () => {
-  //   setMode(mode === "Light" ? "Dark" : "Light");
-  //   if (mode === "dark") {
-  //     document.documentElement.classList.add("dark");
-  //     localStorage.setItem("mode", "light");
-  //   } else {
-  //     document.documentElement.classList.remove("dark");
-  //     localStorage.setItem("mode", "dark");
-  //   }
-  // };
-
   return (
-    <header>
+    <header className="">
       <div className="main-header pt-2 relative z-50">
         <div className="second-div ps-2 text-lg">
           <button
@@ -67,7 +42,11 @@ export default function Header() {
           </button>
         </div>
         <div className="header-div text-[#777777] ">|</div>
-        <div className={`dark:text-[#D9D9D9] third-div  md:float-right `}>
+        <div
+          className="
+            dark:text-[#D9D9D9] text-black third-div md:float-right "
+        >
+          <button className="w-14 h-6  dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full"></button>
           <button onClick={() => handleMode()}>
             {mode === "light" ? "Dark" : "Light"} Mode
           </button>

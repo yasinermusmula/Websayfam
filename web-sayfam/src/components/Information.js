@@ -8,17 +8,14 @@ import { DarkModeContext } from "../context/DarkModeContect";
 
 export default function Information() {
   const InformationData = useSelector((strore) => strore.informationData);
-  const { mode } = useContext(DarkModeContext);
+  const { handleMode, mode } = useContext(DarkModeContext);
 
   // console.log(mode);
 
   return (
     <div className="main-div">
-      <div>
-        <div
-          // id={mode}
-          className={`dark:text-[#B7AAFF] photo-div text-[#4338CA] ${mode}`}
-        >
+      <div className={mode}>
+        <div className={`dark:text-[#B7AAFF] photo-div text-[#4338CA] ${mode}`}>
           <img src={line} className="ml-20 m-4 w-28" />
           <p>{InformationData.name}</p>
         </div>

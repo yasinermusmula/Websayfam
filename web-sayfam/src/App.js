@@ -49,7 +49,7 @@ function App() {
 
   return (
     <DarkModeContext.Provider value={{ mode, handleMode }}>
-      <div className={`dark:bg-[#252128] h-auto bg-[#FFFF] ${mode}`}>
+      <div className={`h-auto dark:bg-[#252128] bg-[#FFFF] ${mode}`}>
         <Header />
         <Information />
         <Skills />

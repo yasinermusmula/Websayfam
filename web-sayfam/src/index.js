@@ -5,6 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "./reducers/store";
+import thunk from "redux-thunk";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
