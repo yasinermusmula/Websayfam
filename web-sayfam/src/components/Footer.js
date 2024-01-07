@@ -5,14 +5,9 @@ import ok from "../assets/ok.png";
 export default function Footer() {
   const FooterData = useSelector((store) => store.footerData);
 
-  
-
   return (
-    <div className=" dark:bg-[#141414] w-auto bg-[#F9F9F9] ">
-      <section
-        id="hire-me"
-        className="flex flex-col ml-32 w-11/12 pt-32 h-[409px]"
-      >
+    <div className=" dark:bg-[#141414] w-auto bg-[#F9F9F9] " id="hire-me">
+      <section className="flex flex-col ml-32 w-11/12 pt-32 h-[409px]">
         <div className="dark:text-[#AEBCCF] flex flex-wrap text-5xl not-italic font-semibold w-[500px] ">
           {FooterData.footerText}
         </div>

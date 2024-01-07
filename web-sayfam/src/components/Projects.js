@@ -6,7 +6,7 @@ export default function Projects(props) {
   const ProjectData = useSelector((store) => store.projectsData);
 
   return (
-    <div
+    <div id="projects"
       className="w-11/12 h-[800px] content-center flex-wrap gap-20 mt-16 mb-"
       ref={props.projectsRef}
     >
