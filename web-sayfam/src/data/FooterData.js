@@ -7,7 +7,7 @@ export const FooterData = {
 };
 
 export const trFooterData = {
-  footerMetin: "Bir sonraki projenizde beraber çalışalım",
+  footerText: "Bir sonraki projenizde beraber çalışalım",
   footerBlog: "Kişisel Blog",
   footerGithub: "Github",
   footerLinkedin: "Linkedin",

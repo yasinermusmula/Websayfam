@@ -7,18 +7,18 @@ export default function Skills() {
   // const { mode } = useContext(DarkModeContext);
 
   return (
-    <div id="skills" className="w-11/12 h-80 mt-36 ">
-      <div className="">
+    <div id="skills" className=" h-80 mt-20 ">
+      <div className="sm:flex flex-col">
         <div className="dark:text-[#AEBCCF] ml-32 mt-8 text-5xl not-italic font-semibold w-1/3 text-[#1F2937]">
           <p>{SkillsData.title}</p>
         </div>
-        <div className="flex flex-row h-40 mb-14 pb-5 ml-32 mt-5">
+        <div className="flex sm:flex-row flex-col ml-32 mt-5">
           {SkillsData.skills.map((key) => (
-            <div key={key.id}>
+            <div key={key.id} className="sm:mb-10">
               <p className="dark:text-[#BAB2E7] text-[#4338CA] text-3xl mr-4">
                 {key.skill}
               </p>
-              <div className="dark:text-[#FFFFFF] text-[#6B7280] w-3/5 h-12 mr-20 mt-7">
+              <div className="dark:text-[#FFFFFF] text-[#6B7280] w-full sm:w-3/5 mt-5">
                 {key.aboutSkill}
               </div>
             </div>

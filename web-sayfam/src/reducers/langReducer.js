@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Tr } from "../actions/langAction";
 import { En } from "../actions/langAction";
 import { FooterData } from "../data/FooterData";
@@ -14,6 +15,7 @@ import { SkillsData } from "../data/SkillsData";
 import { trSkillsData } from "../data/SkillsData";
 import { ProfileDataProps } from "../data/ProfileData";
 import { trProfileDataProps } from "../data/ProfileData";
+import axios from "axios";
 
 const stateInitial = {
   informationData: InformationData,
@@ -24,6 +26,7 @@ const stateInitial = {
   footerData: FooterData,
   profileDataProps: ProfileDataProps,
 };
+
 
 const languageReducer = (state = stateInitial, action) => {
   switch (action.type) {

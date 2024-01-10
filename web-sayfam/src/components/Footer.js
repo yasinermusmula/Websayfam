@@ -6,8 +6,8 @@ export default function Footer() {
   const FooterData = useSelector((store) => store.footerData);
 
   return (
-    <div className=" dark:bg-[#141414] w-auto bg-[#F9F9F9] " id="hire-me">
-      <section className="flex flex-col ml-32 w-11/12 pt-32 h-[409px]">
+    <div className=" dark:bg-[#141414] w-full bg-[#F9F9F9] mt-20" id="hire-me">
+      <section className="flex flex-col ml-32 w-11/12 pt-32 h-96">
         <div className="dark:text-[#AEBCCF] flex flex-wrap text-5xl not-italic font-semibold w-[500px] ">
           {FooterData.footerText}
         </div>
