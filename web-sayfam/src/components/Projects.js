@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="w-11/12 content-center flex-wrap gap-20 mt-16"
+      className="w-11/12 content-center flex-wrap gap-20 mt-8"
     >
       <img src={vector} className="ml-32 w-11/12" />
       <p
@@ -45,8 +45,12 @@ export default function Projects() {
             </div>
 
             <div className="dark:text-[#E1E1FF] flex gap-44 font-semibold text-base text-[#3730A3] mt-3 underline decoration-[#3730A3] dark:decoration-[#E1E1FF]">
-              <a href={key.github} target="_blank">Github</a>
-              <a href={key.github} target="_blank">View Site</a>
+              <a href={key.github} target="_blank">
+                Github
+              </a>
+              <a href={key.github} target="_blank">
+                View Site
+              </a>
             </div>
           </div>
         ))}

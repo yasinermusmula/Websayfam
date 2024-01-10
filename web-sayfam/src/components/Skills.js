@@ -7,7 +7,7 @@ export default function Skills() {
   // const { mode } = useContext(DarkModeContext);
 
   return (
-    <div id="skills" className=" h-80 mt-20 ">
+    <div id="skills" className=" h-72 mt-16 md:w-full ">
       <div className="sm:flex flex-col">
         <div className="dark:text-[#AEBCCF] ml-32 mt-8 text-5xl not-italic font-semibold w-1/3 text-[#1F2937]">
           <p>{SkillsData.title}</p>
