@@ -21,23 +21,14 @@ export default function Profile() {
           </div>
 
           <div className="flex mt-4 md:mt-0 overflow-hidden">
-            <div className=" dark:text-[#FFFFFF] flex flex-col justify-start w-full md:w-48 h-44 font-semibold text-lg">
-              <p>
-                <span>{ProfileDataProps.birthDate}</span>
-              </p>
-              <p>
-                <span>{ProfileDataProps.city}</span>
-              </p>
-              <p>
-                <span>{ProfileDataProps.education}</span>
-              </p>
+            <div className=" dark:text-[#FFFFFF] flex-col  md:w-48  font-semibold text-lg">
+              <p>{ProfileDataProps.birthDate}</p>
+              <p>{ProfileDataProps.city}</p>
+              <p>{ProfileDataProps.education}</p>
               <br />
-              <p>
-                <span>{ProfileDataProps.role}</span>
-              </p>
+              <p>{ProfileDataProps.role}</p>
             </div>
-
-            <div className="dark:text-[#FFFFFF] flex flex-col text-lg">
+            <div className="dark:text-[#FFFFFF] flex-col text-lg">
               <p>{ProfileData.birthDate}</p>
               <p>{ProfileData.city}</p>
               <p>{ProfileData.education}</p>
@@ -50,8 +41,8 @@ export default function Profile() {
           <h3 className="dark:text-[#BAB2E7] text-[#4338CA] text-3xl">
             {ProfileData.aboutMeTitle}
           </h3>
-          <div>
-            <p className="dark:text-[#FFFFFF] mt-3 w-[600px] h-36 text-lg text-[#6B7280] md:flex-row">
+          <div className="flex">
+            <p className="dark:text-[#FFFFFF] mt-3 w-[600px] h-36 text-lg text-[#6B7280] md:flex-col">
               {ProfileData.aboutInfo}
             </p>
           </div>

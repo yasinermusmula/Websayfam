@@ -7,12 +7,12 @@ export default function Footer() {
 
   return (
     <div className=" dark:bg-[#141414] w-full bg-[#F9F9F9] mt-20" id="hire-me">
-      <section className="flex flex-col ml-32 w-11/12 pt-32 h-96">
-        <div className="dark:text-[#AEBCCF] flex flex-wrap text-5xl not-italic font-semibold w-[500px] ">
+      <section className="flex-col ml-32 pt-32 h-full dark:bg-[#141414]">
+        <div className="dark:text-[#AEBCCF]  text-5xl not-italic font-semibold md:w-[600px]">
           {FooterData.footerText}
         </div>
 
-        <div className="flex flex-row justify-between my-5">
+        <div className="flex md:flex-row flex-col justify-between my-5 md:gap-0">
           <div className=" flex flex-row h-6 mt-16 ">
             <img src={ok} alt="resim" />
             <p className="dark:text-[#BAB2E7] text-[#AF0C48] text-xl ml-3">
@@ -20,7 +20,7 @@ export default function Footer() {
             </p>
           </div>
 
-          <div className="flex justify-end gap-5 mt-16 mr-24">
+          <div className="flex  justify-end gap-5 mt-16 mr-24">
             <a
               id="personalblog"
               className="dark:text-[#E1E1FF] text-[#0A0A14] text-lg"
@@ -46,6 +46,7 @@ export default function Footer() {
           </div>
         </div>
       </section>
+      //{" "}
     </div>
   );
 }

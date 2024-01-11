@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div
       id="projects"
-      className="w-11/12 content-center flex-wrap gap-20 mt-8"
+      className="w-11/12 content-center flex-wrap gap-20 mt-8 md:my-10 my-6"
     >
       <img src={vector} className="ml-32 w-11/12" />
       <p

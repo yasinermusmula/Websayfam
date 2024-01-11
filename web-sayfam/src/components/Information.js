@@ -10,11 +10,12 @@ import { DarkModeContext } from "../context/DarkModeContect";
 
 export default function Information() {
   const InformationData = useSelector((strore) => strore.informationData);
-  const {  mode } = useContext(DarkModeContext);
+  const { mode } = useContext(DarkModeContext);
 
   // console.log(mode);
 
   return (
+    // <div>
     <div className="main-div flex-col md:flex-row items-center justify-center ">
       <div>
         <div className="dark:text-[#B7AAFF] photo-div text-[#4338CA] text-lg md:text-xl">
@@ -25,14 +26,14 @@ export default function Information() {
           <h2>{InformationData.titleHeader}</h2>
         </div>
         <div>
-          <div className="dark:text-[#FFFFFF] mt-16 ml-16 w-3/5 h-32 text-lg text-[#6B7280] font-inter font-normal">
+          <div className="dark:text-[#FFFFFF] mt-16 ml-16 w-3/5 h-32 text-lg text-[#6B7280] font-inter font-normal md:w-[553px]">
             {InformationData.aboutInfoBody}
           </div>
         </div>
-        <div className="flex justify-center w-96 h-20 ml-16">
+        <div className="flex justify-center w-96 h-20 ml-16 md:justify-start">
           <a
             href="#hire-me"
-            className="dark:bg-[#E1E1FF] dark:text-[#000000] flex justify-center p-3 w-48 h-14 text-lg font-medium text-[#FFFFFF] bg-[#3730A3] border-2 rounded-md"
+            className="dark:bg-[#E1E1FF] dark:text-[#000000] flex justify-center p-3 w-48 h-14 text-lg font-medium text-[#FFFFFF] bg-[#3730A3] border-2 rounded-md md:py-4"
           >
             {InformationData.infoHireMe}
           </a>
@@ -68,6 +69,7 @@ export default function Information() {
           className="rounded-3xl w-full h-full"
         />
       </div>
+      {/* </div> */}
     </div>
   );
 }
