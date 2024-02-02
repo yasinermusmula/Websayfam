@@ -36,8 +36,8 @@ export default function Header() {
   }
 
   return (
-    <header>
-      <div className="main-header pt-2 relative ">
+    <header className="md:flex-col">
+      <div className="main-header pt-2 relative md:flex-col">
         <div className="second-div ps-2 text-lg">
           <button
             onClick={changeLanguage}
@@ -49,7 +49,7 @@ export default function Header() {
         <div className="header-div text-[#777777] ">|</div>
         <div
           className="
-            dark:text-[#D9D9D9] text-black third-div md:float-right "
+            dark:text-[#D9D9D9] text-black third-div"
         >
           <button
             className="flex items-center space-x-2 w-14 h-6  dark:bg-[#3A3A3A] bg-[#4731D3] rounded-full"
@@ -71,21 +71,21 @@ export default function Header() {
             Y
           </div>
         </div>
-        <div className="flex flex-col md:flex-row m-2">
+        <div className="flex m-2 md:flex-col md:mt-8 sm:flex-col md:items-center md:justify-center">
           <button
-            className="dark:text-[#6B7280] mx-0 md:mx-2 mt-3 py-2  text-lg font-medium"
+            className="dark:text-[#6B7280] mx-0  mt-3 py-2  text-lg font-medium"
             onClick={goSkills}
           >
             {HeaderData.skills}
           </button>
           <button
-            className="dark:text-[#6B7280] mx-0 md:mx-2 mt-3 py-2 p-10 text-lg font-medium"
+            className="dark:text-[#6B7280] mx-0 mt-3 py-2 p-10 text-lg font-medium"
             onClick={goProjects}
           >
             {HeaderData.projects}
           </button>
           <button
-            className="dark:text-[#3730A3] dark:bg-[#FFFFFF] border-2 text-lg font-medium border-[#3730A3] rounded px-7 py-2 mt-3 mb-3 md:mb-0"
+            className="dark:text-[#3730A3] dark:bg-[#FFFFFF] border-2 text-lg font-medium border-[#3730A3] rounded px-7 py-2 mt-3 mb-3"
             onClick={goHireMe}
           >
             {HeaderData.hireMe}

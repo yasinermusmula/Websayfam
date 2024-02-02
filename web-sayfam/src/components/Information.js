@@ -16,9 +16,9 @@ export default function Information() {
 
   return (
     // <div>
-    <div className="main-div flex-col md:flex-row items-center justify-center ">
+    <div className="main-div items-center md:flex-col md:mt-8">
       <div>
-        <div className="dark:text-[#B7AAFF] photo-div text-[#4338CA] text-lg md:text-xl">
+        <div className="dark:text-[#B7AAFF] photo-div text-[#4338CA] text-lg ">
           <img src={line} className="ml-20 m-4 w-28" />
           <p>{InformationData.name}</p>
         </div>
@@ -26,14 +26,14 @@ export default function Information() {
           <h2>{InformationData.titleHeader}</h2>
         </div>
         <div>
-          <div className="dark:text-[#FFFFFF] mt-16 ml-16 w-3/5 h-32 text-lg text-[#6B7280] font-inter font-normal md:w-[553px]">
+          <div className="dark:text-[#FFFFFF] mt-16 ml-16 w-3/5 h-32 text-lg text-[#6B7280] font-inter font-normal">
             {InformationData.aboutInfoBody}
           </div>
         </div>
-        <div className="flex justify-center w-96 h-20 ml-16 md:justify-start">
+        <div className="flex justify-center w-96 h-20 ml-16 md:flex-col md:justify-center md:mt-24 md:mb-6">
           <a
             href="#hire-me"
-            className="dark:bg-[#E1E1FF] dark:text-[#000000] flex justify-center p-3 w-48 h-14 text-lg font-medium text-[#FFFFFF] bg-[#3730A3] border-2 rounded-md md:py-4"
+            className="dark:bg-[#E1E1FF] dark:text-[#000000] flex justify-center p-3 w-48 h-14 text-lg font-medium text-[#FFFFFF] bg-[#3730A3] border-2 rounded-md md:ml-5 md:w-32"
           >
             {InformationData.infoHireMe}
           </a>
@@ -41,7 +41,7 @@ export default function Information() {
           <a
             href="https://github.com/yasinermusmula"
             target="_blank"
-            className="dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] ml-5 w-48 h-14 flex items-center gap-2 border-2 rounded-md p-2 text-lg border-[#3730A3] text-[#3730A3] font-medium "
+            className="dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] ml-5 w-48 h-14 flex items-center gap-2 border-2 rounded-md p-2 text-lg border-[#3730A3] text-[#3730A3] font-medium md:w-32 md:mt-4"
           >
             <img src={mode === "dark" ? gitHubDark : gitHub} alt="github" />
             {/* <i class="fa-brands fa-github"></i> */}
@@ -52,7 +52,7 @@ export default function Information() {
           <a
             href="https://www.linkedin.com/feed/"
             target="_blank"
-            className="dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] ml-5 w-48 h-14 flex items-center gap-2 border-2 rounded-md p-2 text-lg border-[#3730A3] text-[#3730A3] font-medium "
+            className="dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] ml-5 w-48 h-14 flex items-center gap-2 border-2 rounded-md p-2 text-lg border-[#3730A3] text-[#3730A3] font-medium md:w-32"
           >
             <img
               src={mode === "dark" ? linkedInDark : linkedIn}
@@ -62,7 +62,7 @@ export default function Information() {
           </a>
         </div>
       </div>
-      <div className=" h-1/5 mt-8 md:h-full">
+      <div className=" h-1/5 mt-8">
         <img
           src={InformationData.portfoliaImg}
           alt="resim"

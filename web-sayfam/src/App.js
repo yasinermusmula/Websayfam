@@ -10,6 +10,7 @@ import "./App.css";
 import { DarkModeContext } from "./context/DarkModeContect";
 
 function App() {
+  
   const [mode, setMode] = useState(
     localStorage.getItem("mode") === "light" ? "light" : "dark"
   );

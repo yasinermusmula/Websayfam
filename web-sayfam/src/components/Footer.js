@@ -6,13 +6,13 @@ export default function Footer() {
   const FooterData = useSelector((store) => store.footerData);
 
   return (
-    <div className=" dark:bg-[#141414] w-full bg-[#F9F9F9] mt-20" id="hire-me">
-      <section className="flex-col ml-32 pt-32 h-full dark:bg-[#141414]">
-        <div className="dark:text-[#AEBCCF]  text-5xl not-italic font-semibold md:w-[600px]">
+    <div className=" dark:bg-[#141414] w-full bg-[#F9F9F9] mt-20 md:flex-col" id="hire-me">
+      <section className="flex-col ml-32 pt-32 h-full dark:bg-[#141414] ">
+        <div className="dark:text-[#AEBCCF]  text-5xl not-italic font-semibold ">
           {FooterData.footerText}
         </div>
 
-        <div className="flex md:flex-row flex-col justify-between my-5 md:gap-0">
+        <div className="flex flex-col justify-between my-5 md:gap-0">
           <div className=" flex flex-row h-6 mt-16 ">
             <img src={ok} alt="resim" />
             <p className="dark:text-[#BAB2E7] text-[#AF0C48] text-xl ml-3">
