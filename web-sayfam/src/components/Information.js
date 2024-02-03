@@ -30,7 +30,7 @@ export default function Information() {
             {InformationData.aboutInfoBody}
           </div>
         </div>
-        <div className="flex justify-center w-96 h-20 ml-16 md:flex-col md:justify-center md:mt-24 md:mb-6">
+        <div className="flex justify-center w-96 h-20 ml-16 md:flex-col md:mt-24 md:mb-6 md:ml-32">
           <a
             href="#hire-me"
             className="dark:bg-[#E1E1FF] dark:text-[#000000] flex justify-center p-3 w-48 h-14 text-lg font-medium text-[#FFFFFF] bg-[#3730A3] border-2 rounded-md md:ml-5 md:w-32"
@@ -52,7 +52,7 @@ export default function Information() {
           <a
             href="https://www.linkedin.com/feed/"
             target="_blank"
-            className="dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] ml-5 w-48 h-14 flex items-center gap-2 border-2 rounded-md p-2 text-lg border-[#3730A3] text-[#3730A3] font-medium md:w-32"
+            className="dark:bg-[#383838] dark:text-[#E1E1FF] dark:border-[#E1E1FF] ml-5 w-48 h-14 flex items-center gap-2 border-2 rounded-md p-2 text-lg border-[#3730A3] text-[#3730A3] font-medium md:w-32 md:mt-5"
           >
             <img
               src={mode === "dark" ? linkedInDark : linkedIn}
@@ -62,7 +62,7 @@ export default function Information() {
           </a>
         </div>
       </div>
-      <div className=" h-1/5 mt-8">
+      <div className=" h-1/5 mt-8 md:mr-12">
         <img
           src={InformationData.portfoliaImg}
           alt="resim"

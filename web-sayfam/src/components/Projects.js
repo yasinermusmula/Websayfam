@@ -17,14 +17,10 @@ export default function Projects() {
       >
         {ProjectData.title}
       </p>
-      <div className=" flex md:flex-col">
+      <div className="flex md:flex-col">
         {ProjectData.projects.map((key) => (
           <div key={key.id} className="flex flex-col ml-32">
-            <img
-              src={key.projectImg}
-              alt="resim"
-              className="w-[300px]"
-            />
+            <img src={key.projectImg} alt="resim" className="w-[300px]" />
             <p className="dark:text-[#CFCBFF] text-3xl font-medium text-[#4338CA] mt-3">
               {key.title}
             </p>

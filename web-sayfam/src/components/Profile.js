@@ -12,18 +12,18 @@ export default function Profile() {
         <div className="md:mt-48">
           <img src={vector} className="w-10/12 ml-24 text-end" />
         </div>
-        <div className="flex md:flex-col justify-center">
-          <div className="m-6">
-            <h2 className="dark:text-[#AEBCCF] text-5xl not-italic font-semibold text-[#1F2937] mb-8">
+        <div className="flex md:flex-col justify-around md:h-fulll">
+          <div className="m-6 md:justify-center">
+            <h2 className="dark:text-[#AEBCCF] text-5xl not-italic font-semibold text-[#1F2937] mb-8 md:ml-12">
               {ProfileData.titleProfile}
             </h2>
             <div>
-              <h3 className="dark:text-[#BAB2E7] flex mb-4 text-[#4338CA] text-3xl">
+              <h3 className="dark:text-[#BAB2E7] flex mb-4 text-[#4338CA] text-3xl md:ml-12">
                 {ProfileData.littleTitleProfile}
               </h3>
             </div>
 
-            <div className="flex">
+            <div className="flex md:ml-12">
               <div className=" dark:text-[#FFFFFF] w-40 font-semibold text-lg">
                 <p>{ProfileDataProps.birthDate}</p>
                 <p>{ProfileDataProps.city}</p>
@@ -31,7 +31,7 @@ export default function Profile() {
                 <br />
                 <p>{ProfileDataProps.role}</p>
               </div>
-              <div className="dark:text-[#FFFFFF] text-lg">
+              <div className="dark:text-[#FFFFFF] w-96 text-lg">
                 <p>{ProfileData.birthDate}</p>
                 <p>{ProfileData.city}</p>
                 <p>{ProfileData.education}</p>
@@ -40,8 +40,8 @@ export default function Profile() {
             </div>
           </div>
 
-          <div className="flex flex-col justify-center">
-            <h3 className="dark:text-[#BAB2E7] flex md:text-center text-[#4338CA] text-3xl">
+          <div className="flex flex-col justify-center mt-16">
+            <h3 className="dark:text-[#BAB2E7] md:justify-center flex md:text-center text-[#4338CA] text-3xl">
               {ProfileData.aboutMeTitle}
             </h3>
             <div className="flex md:text-center">
